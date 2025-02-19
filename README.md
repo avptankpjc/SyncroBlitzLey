@@ -1,4 +1,14 @@
+<!-- 
+![SyncroBlitzLey](./assets/imgs/A00_2_Logo_SBL_SZ_348x400_v1.png)
+
+ -->
+
+<p align="center">
+  <img src="./assets/imgs/A00_2_Logo_SBL_SZ_348x400_v1.png" alt="Logo del proyecto" width="300">
+</p>
+
 # SyncroBlitzLey
+
 
 Sincroniza los nombres de los objetos seleccionados con los nombres de sus datos de malla en Blender.
 
