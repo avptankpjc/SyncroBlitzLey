@@ -30,13 +30,14 @@ bl_info = {
 
 import bpy
 
-from .cont.sb_operators import SyncNamesOperator
-from .view.sb_panel import SyncNamesPanel
+from .cont.sb_operators import SyncNamesOperator, SyncAddPrefixSuffixOperator
+from .view.sb_panel import SyncToolPanel
 
 
 s_classes = [
     SyncNamesOperator,
-    SyncNamesPanel
+    SyncAddPrefixSuffixOperator,
+    SyncToolPanel
 ]
 
 def register():
@@ -45,7 +46,7 @@ def register():
 
 
 def unregister():
-    for cls in s_classes:
+    for cls in reversed(s_classes):
         bpy.utils.unregister_class(cls)
 
 if __name__ == "__main__":
