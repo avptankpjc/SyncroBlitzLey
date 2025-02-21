@@ -117,19 +117,21 @@ class SyncAddPrefixSuffixOperator(bpy.types.Operator):
                 
             if self.affect_materials:
                 if obj.material_slots:
+                    local_count = 1
                     for slot in obj.material_slots:
                         if slot.material:
                             material_name = slot.material.name
                             new_txt = self.text.strip().replace(" ", "_")
 
                             if self.enumerate: 
-                                new_txt += f"{counter:02d}"
+                                new_txt += f"{local_count:02d}"
 
                             if self.is_prefix:
                                 slot.material.name = apply_prefix_suffix(material_name, prefix=new_txt)
                             else:
                                 slot.material.name = apply_prefix_suffix(material_name, suffix=new_txt) 
 
+                            local_count += 1
 
             counter += 1    
         return {"FINISHED"}
