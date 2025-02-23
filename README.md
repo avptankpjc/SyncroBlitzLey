@@ -9,35 +9,40 @@
 
 # SyncroBlitzLey
 
+Synchronizes the names of the selected objects with the names of their mesh data in Blender.
 
-Sincroniza los nombres de los objetos seleccionados con los nombres de sus datos de malla en Blender.
+## Features
+- Synchronizing the object name with its data mesh.
+- Add/Repalce Prefix or Suffix on object element and optionally its materials.
+- Accessible from the sidebar in 3D View.
+- Compatible with Blender 2.80 or higher.
 
-## Características
-- Sincronización del nombre del objeto con su malla de datos.
-- Accesible desde la barra lateral en la Vista 3D.
-- Compatible con Blender 2.80 o superior.
+## Install
+1. Download the file `.zip` from repository or [release](https://github.com/avptankpjc/SyncroBlitzLey/releases) section.
+2. Open Blender.
+3. Go to `Edit > Preferences > Add-ons`.
+4. Click on  `Install` and selecte the file `.zip`.
+5. Activate the addon in the list(SyncroBlitzLey).
 
-## Instalación
-1. Descarga el archivo `.zip` del repositorio.
-2. Abre Blender.
-3. Ve a `Edit > Preferences > Add-ons`.
-4. Haz clic en `Install` y selecciona el archivo `.zip`.
-5. Activa el addon en la lista.
-
-## Uso
-1. Selecciona los objetos cuyos nombres quieras sincronizar.
-2. Abre el menú lateral (`N`) en la Vista 3D.
-3. Ve a la pestaña "SyncBzLey", cambia el nombre del objecto selectionado y haz clic en "Sync Selected Objects".
+## Use
+1. Open sidebar menu (`N`) in the 3D View.
+2. Select the objects whose names you want to synchronize.
+3. Go to tab "SyncroBlitzLey", rename the selected object by clicking "Sync Selected Objects".
+4. The Same thing for materials if desired, mark the checkbox and click the button.
+5. Add/Replace prefix or suffix by clicking on "Add/Replace Prefix-Suffix" and check the option boxes to get different results based on your requirements. 
 
 
-## Requisitos
+## Requirements
 - Blender 2.80 o superior.
 
-## Licencia
-Este addon está licenciado bajo la GNU General Public License v3.0 (GPLv3). Para más detalles, consulta el archivo `LICENSE`.
+## License
+This addon is licensed under the GNU General Public License v3.0(GPLv3).
+For more details, see the file `LICENSE`.
 
-## Autor
-Creado por AvpTankPowerJc.
+## Author
+ By: AvpTankPowerJc.
 
-Este proyecto está licenciado bajo la [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.txt).  
-Eres libre de usar, modificar y distribuir este código siempre que los derivados mantengan esta misma licencia.
+## Footer Notes
+This Addon is licensed under the  GNU General Public License v3.0 (GPLv3). For more details, see the file [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.txt).  
+You are free to use, modify, and distribute this code as long as you derivates
+maintain this same license.
